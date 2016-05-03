@@ -1,0 +1,33 @@
+MSTCL
+
+Payments & Receipts
+
+Payments Due
+	Expands to show List of Services that the Client has used 
+	which still need to be paid for.  If list longer than X then 
+	services are grouped by type.  Provides option to see more
+	detail on dedicated page.
+Payment History
+	Expands to show last ten payments, option to view all payments
+Create Recipt
+	Takes to Receipt Creation wizard/page.
+
+?Options for non payment?
+	Right off payment, Partial Payment, other type/classification?
+
+---
+
+3. Receipt Creation
+
+----
+
+Services To Be Paid for:
+ Service and Date - Amount - tick box to select
+ Service and Date - Amount - tick box to select
+...
+
+Donation - Text Box
+
+Total Amount:
+
+View Receipt -> Save and Print Receipt (saves a PDF in Database, and as a file as a back up.  Prints Receipt for Customer)

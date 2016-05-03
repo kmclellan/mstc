@@ -1,0 +1,11 @@
+MSTCL
+
+Client Medical Record
+
+Diagnosis/Illnesses
+Diagnosis Date (for each illness?)
+NHS No.
+GP (name & contact details)
+Referal Type
+Gender
+Birth Date

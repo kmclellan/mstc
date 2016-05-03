@@ -1,0 +1,40 @@
+MS THerapy Centre Lothian
+Booking and Client System
+
+Therapy Booking
+
+Oxygen (16.5, 24, 33, Child)
+Physiotherapy (Instructor/group/type)
+Pilates
+Yoga
+Accupuncture
+Massage
+Aroma Therapy
+Reiki
+Ear Candles
+
+Resources, Booking and Calendars
+
+Oxygen Chamber
+Physio Room
+Therapy Room
+Group Space
+
+Clients and System Users
+
+Users
+Clients
+Bookings
+Payments
+SEARCH
+Other usefull links: Illnesses, Attendance and Cancelations, Add New Client
+
+Oxygen Chamber Session
+
+Initiate Session
+View Past Sessions
+
+Reports
+
+Weekly, Monthly, Quarterly, Annual, Date Range
+Usage, Receipts

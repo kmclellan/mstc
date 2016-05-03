@@ -1,0 +1,10 @@
+MSTCL
+
+Reports
+
+Session Efficiency
+Session Uptake
+Payment Annalysis 
+	regular payers: % and numbers
+	non payers: % and numbers, amount not paid
+	Total income, still due, other payment type

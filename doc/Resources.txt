@@ -1,0 +1,49 @@
+MSTCL
+Rseources and Allocation
+
+Resources
+
+Physio Room -> booking types for this resource
+Therapy Room
+Group Space
+Oxygen Chamber
+
+add resource
+
+
+Resource Timetable
+
+Define Time slots and repeating pattern for each resource
+ - Daily/Weekly(2, 4, 6, 8 weeks)
+Set timeslot review date (suggest review dates for selection, allow date to be set manually) Emails will be sent to users who are reviewers.
+Edit Individual slots created to tweak them as required (can delete)
+Preserve history of timeslots (past time slots can not be destroyed)
+
+?Share timetable with Website, Google Calendar, Facebook?
+
+Booking Types
+
+Physio Room
+	Physio 1:1 Gillian
+	Physio 1:1 Manos
+	Physio 2:1 Joint
+Therapy Room
+	Access Bars
+	Accupuncture
+	Massage
+	Reflexology
+	Reiki
+	Meeting
+Oxygen Chamber
+	16.5
+	24
+	33
+	Child
+Group Space
+	Physio Circuit
+	Physio Seated
+	Physio Standing
+	Physio Balance
+	Physio Stretching
+	Pilates
+	Yoga

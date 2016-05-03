@@ -1,0 +1,38 @@
+MSTCL
+
+Client Record
+
+Initial client page should provide basic identifying information and links to bookings, receipt creation, payments, and further information.
+
+View Information from User Record
+ Name
+ Address
+ Post Code
+ Phone Number etc etc
+
+Therapies Used
+
+Link to Medical Records
+Files attached to client (scans/pdfs)
+
+Emergency Contact & Details
+Next of kin & Contact Details
+
+Other Fields that come under this section:
+
+Date of birth
+Referal Type
+Registration Date
+Wheelchair User -> Wheelchair size
+Evaluation Status, Protocol applicable to client
+
+Functionality Required here:
+
+Bookings for this Client
+ Current Bookings
+ Booking History -> Repeat bookings
+ New Booking
+
+Payments & Receipts
+ History
+ Due

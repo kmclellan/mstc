@@ -1,0 +1,15 @@
+Hardware and Hosting
+
+MSTCL have the following requirements:
+
+ - Client records need to be secure so that they remain confidential
+ - MSTCL need to have use of the system at all times;
+ - Access to the system via the internet would be nice for some aspects (integration with the website/self booking by clients) but isn't a deal breaker;
+
+Influencing factors on system design:
+
+ - MSTCL have a local network with WiFi that clients can use with a posted password to access the internet;
+ - MSTCL have a history of losing their internet connection for an extended period at least once a year;
+ - Physical security: MSTCL do have a secure, ventilated location for a server.
+
+Currently it is envisioned that the system would run on a small simple computer running linux connected to the local network in a secure, ventialated location.  Other than that, no further thought has currently been given to redundancy, back-ups, connection to the internet, type of hardware or linux distribution for the server.

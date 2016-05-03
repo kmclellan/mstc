@@ -1,0 +1,21 @@
+MSTCL
+Therapy Booking
+
+Oxygen Therapy
+
+Pressures
+ 16.5 -> List of slots by day
+ 24 ->
+ 33 ->
+ Child ->
+
+Timetable
+
+Day of week | Date | 1st time slot | 2nd | 3rd | 4th | 5th | 6th | 7th |
+Scrollable box, week at a time? view next week? View next month?
+
+Click/Select Time slot -> Select client (Text Box, stat typing name for suggestions), suggest most frequent users for selected time slot, then most frequent users
+
+If coming from Client record then suggest/highlight slots and pressures that the client normally uses.
+
+Take not of time when booking is made.

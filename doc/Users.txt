@@ -1,0 +1,30 @@
+MSTCL
+
+Users
+
+User Search (Text Box)
+User List
+User Stats
+
+User Type
+
+Clients
+Donor
+Employee/Staff
+Volunteer
+Member
+Therapist
+Trustee
+[Visiting Client]
+
+Common Information for Each User
+
+Name
+Address
+Post Code
+Phone Number
+Mobile Number
+e-mail
+prefered method of Contact
+Title
+Gender

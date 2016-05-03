@@ -1,0 +1,46 @@
+Oxygen Session
+
+Current Session (time and date) - Pressure - Time Remaining
+
+Next Session: pressure due to start at Time
+
+Current Operator: Operator name		Change Operator
+
+Session Clients (hide/show)
+
+List Clients Booked in session, option to add clients
+Person 1 - Alert (Operator attention) - present (tick box) - absent (tick box)
+Person 2 -
+...
+Add Client (just like booking for this resource time slot)
+
+
+Checklist
+	Clock and countdown timer to next item on list
+
+Update paper list of chamber users - tick box
+Ear and Safety Check - tick box
+Open 1/4 turn valves - tick box
+Door Closed - tick box - time recorded and appears beside tick box
+Intercom check - tick box
+1 minute pressure - text box - verifies that pressure is increasing
+6 minute pressure - text box - predicts "at pressure" time
+  Open door handles - tick box
+10 minute pressure - text box - predicts "at pressure" time
+At pressure - tick box  - time recorded and appears beside tick box
+at pressure O2 reading - text box
+15 minute O2 reading - text box  - predicts if flush will be required
+30 minute O2 reading - text box - predicts if flush will be required
+45 minute O2 reading - text box - predicts if flush will be required
+60 minutes - alarm sounds
+Depresurisation started - tick box
+10ft to go - Masks off and open exhaust 2 - tick box
+8ft to go - Open exhaust 3 - tick box
+
+Supplementarty
+O2 Flush 1 - start time, end time
+O2 Flush 2 - start time, end time
+Flush requested? - tick box
+
+Completed tasks
+When a task is completed it is moved to the end of the screen under this heading to keep it out of the way.  Alternatively, the next task to be completed can appear near the timer and ticked off there instead.
