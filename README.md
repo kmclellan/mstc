@@ -1,8 +1,8 @@
 # MSTC CRM with OTSM
 
-## Client, Resource and Oxygen Therapy Session Management for Multiple Sclerosis Therapy Centres
+**Multiple Sclerosis Therapy Centre Client and Resource Management with Oxygen Therapy Session Management**
 
-### An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Centres an integrated tool to manage clients, resources and oxygen therapy sessions.  
+An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Centres an integrated tool to manage clients, resources and oxygen therapy sessions.  
 
 Initially created for the MS Therapy Centre Lothian http://www.mstc-lothian.org.uk/
 
