@@ -10,6 +10,10 @@ The software is intended to be run onsite on a dedicated linux based server.
 
 Pull requests and bug reports are always welcome!
 
+## Initial Developmet
+
+Text files have been created (found under ./doc/) giving a very basic listing of features that are required or desired.  These documents should provide a general idea of the controlers and data fields which need to be created.
+
 ## System Requirements
 
 ## Installation

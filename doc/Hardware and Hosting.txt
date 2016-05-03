@@ -6,6 +6,9 @@ MSTCL have the following requirements:
  - MSTCL need to have use of the system at all times;
  - Access to the system via the internet would be nice for some aspects (integration with the website/self booking by clients) but isn't a deal breaker;
 
+Potential Future Requirments
+ - It would be nice to be able to print directly from the application to a network printer.
+
 Influencing factors on system design:
 
  - MSTCL have a local network with WiFi that clients can use with a posted password to access the internet;
