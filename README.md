@@ -14,10 +14,6 @@ Pull requests and bug reports are always welcome!
 
 Text files have been created (found under ./doc/) giving a very basic listing of features that are required or desired.  These documents should provide a general idea of the controlers and data fields which need to be created.
 
-## System Requirements
-
-## Installation
-
 ## License / Copyright
 
 The software is released under an open source MIT license (please see copyright file).
