@@ -14,6 +14,17 @@ Pull requests and bug reports are always welcome!
 
 Text files have been created (found under ./doc/) giving a very basic listing of features that are required or desired.  These documents should provide a general idea of the controlers and data fields which need to be created.
 
+## Contributing
+
+ - Fork the repository using Github.
+ - Checkout a named feature branch created from the develop branch.
+ - Write tests using rspec.
+ - Complete modifications or corrections.
+ - Run the tests, ensuring they all pass. (See TESTING.md)
+ - Contact lead developer, describe work done, submit a Pull Request to the develop branch using Github.
+
+If you have direct access to the repository then develop in a branch before merging to master.  DO NOT DEVELOP IN THE MASTER BRANCH.
+
 ## License / Copyright
 
 The software is released under an open source MIT license (please see copyright file).
