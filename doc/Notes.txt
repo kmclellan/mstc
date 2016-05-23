@@ -1,0 +1,46 @@
+File based dynamic site (Files containing the content are used to generate pages using informatin stored in a database) 
+Interactive (User provide information using forms that is stored in the database)
+Purchases (Records Payments and generates receipts for payments made over the phone, by bank transfer, and through the application over the internet)
+User Account Based (Users of the site have user accounts)
+Secure Site (SSL)
+
+File based content changes will be mainly for improved useability
+Database is mainly for storing important information.  This will change regularily and is normally provided by users and admins.
+
+Design for overall site structure
+Overall look and feel (colour schemes, fonts etc.)
+Site Navigation components (Menu structure)
+Individual page layouts
+
+Theme-able site: yes
+
+Budget - not much at all
+
+Documentation
+Developer Guide
+- How to get the source code
+- How the code is laid out
+- how to set up the build system
+- how to run a build
+- how to contribute
+
+Mailing List
+Google Group
+Version numbers (Source control tagging)
+ - 0.0.1 - Initial
+ - 0.1.0 - Something works
+ - 0.2.0 - something else works
+ - 1.0.0 - Everything works
+ - 1.0.1 - A small improvement
+ - 1.1.0 - A big improvement
+ - 2.0.0 - A big improvement, perhaps even new requirements (e.g. rails or ruby version)
+
+Commit messages: should be appropriate for generating change logs
+
+Accepting Contributions
+
+Contact lead developer, describe work done, submit Pull request,
+If you have direct access to the repository then develop in a branch before merging to master.  DO NOT DEVELOP IN THE MASTER BRANCH.
+
+
+
