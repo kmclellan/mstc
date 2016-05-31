@@ -1,4 +1,4 @@
-# Contributing to Reservations
+# Contributing to MSTC
 Thanks so much for helping with the development of the MSTC app! This guide
 will cover the process for helping out with the project and should allow you
 to get started quickly and easily. If you need any help with contributing,
@@ -288,7 +288,7 @@ conduct.
 We promise to extend courtesy and respect to everyone involved in this project
 regardless of gender, gender identity, sexual orientation, disability, age,
 race, ethnicity, religion, or level of experience. We expect anyone
-contributing to the Reservations project to do the same.
+contributing to the MSTC project to do the same.
 
 If any member of the community violates this code of conduct, the maintainers
 of the MSTC project may take action, removing issues, comments, and
