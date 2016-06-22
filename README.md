@@ -2,7 +2,7 @@
 
 **Multiple Sclerosis Therapy Centre Client and Resource Management with Oxygen Therapy Session Management**
 
-An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Centres an integrated tool to manage clients, resources and oxygen therapy sessions.  
+An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Centres an integrated tool to manage clients, resources and oxygen therapy sessions.  Please see [Use Cases](https://github.com/kmclellan/mstc/wiki/Use-Cases) in the wiki for a view of where this project will be going.
 
 Initially created for the MS Therapy Centre Lothian http://www.mstc-lothian.org.uk/
 
