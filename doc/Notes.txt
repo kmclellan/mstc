@@ -42,5 +42,13 @@ Accepting Contributions
 Contact lead developer, describe work done, submit Pull request,
 If you have direct access to the repository then develop in a branch before merging to master.  DO NOT DEVELOP IN THE MASTER BRANCH.
 
-
+rubocop?
+Travis?
+Github pages?
+labels?
+issues?
+LiceCap
+Bug report template from Ghost
+Yard?
+Capybara? For Testing?
 
