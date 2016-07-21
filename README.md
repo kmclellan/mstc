@@ -61,7 +61,7 @@ http://localhost:3000
 
 ## Contributing
 
-Please see CONTRIBUTING.md for more detail.
+Please see [CONTRIBUTING.md](https://github.com/kmclellan/mstc/blob/master/CONTRIBUTING.md) for more detail.
 
  - Fork the repository using Github.
  - Checkout a named feature branch created from the development branch.
