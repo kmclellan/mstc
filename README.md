@@ -67,7 +67,7 @@ Please see [CONTRIBUTING.md](https://github.com/kmclellan/mstc/blob/master/CONTR
  - Checkout a named feature branch created from the development branch.
  - Write tests using rspec.
  - Complete modifications or corrections.
- - Run the tests, ensuring they all pass. (See TESTING.md)
+ - Run the tests, ensuring they all pass. (See [TESTING.md](https://github.com/kmclellan/mstc/blob/master/TESTING.md))
  - Contact lead developer, describe work done, submit a Pull Request to the development branch using Github.
 
 If you have direct access to the repository then develop in a branch before merging to master.  DO NOT DEVELOP IN THE MASTER BRANCH.
