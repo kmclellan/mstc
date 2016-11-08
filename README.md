@@ -23,7 +23,8 @@ Text files have been created (found under ./doc/) giving a very basic listing of
 
 Before you get started, the following needs to be installed:
 
-  * **Ruby**. Version 2.2.4 (Windows) or 2.3.1 (Linux)
+  * **Ruby** (Linux) 2.3.1
+  * **Ruby** (Windows) 2.2.5  -  Will probably need the DevKit. If you try 2.3.1 then please let me know if it works.
   * [**RubyGems**](http://rubygems.org/)
   * **Bundler**: `gem install bundler`
   * [**Git**](http://help.github.com/git-installation-redirect)
