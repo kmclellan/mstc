@@ -38,6 +38,7 @@ gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'spring-commands-rspec'
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
   gem 'capybara'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
