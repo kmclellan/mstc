@@ -43,7 +43,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
   gem 'thin'
   gem 'guard-rspec'
   gem 'guard-bundler'
@@ -51,6 +50,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'web-console', '~> 2.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
