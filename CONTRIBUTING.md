@@ -129,9 +129,9 @@ pull in the latest changes from `upstream` if you cloned a while ago
 branch name with the GitHub issue number and including a few descriptive
 words, i.e. `1234_brief_issue_description`.
 
-We generally maintain release branches for minor versions (e.g.
-`release-v3.4`) for patching purposes - if you're working on a version-
-specific bug make sure you branch off of the correct place.
+In the future we plan to maintain release branches for minor versions (e.g.
+`release-v1.4`) for patching purposes so if you end up working on a version-
+specific bug please make sure you branch off of the correct place.
 
 ### Testing
 Make sure to update or add to the test suite where appropriate; patches and
@@ -143,12 +143,12 @@ submitting a pull request (PR).
 ### Code / Style Conventions
 We use [Rubocop](http://batsov.com/rubocop/) as the arbiter of style for
 the MSTC app. You should run `rubocop -D` to ensure that all of your changes
-match the project conventions. We occasionally allow exceptions from code
+match the project conventions. We will occasionally allow exceptions from code
 complexity violations; you should make any such request in the GitHub pull
 request comments.
 
 ### Cleaning up your branch
-Before you submit your PR, you should clean up your commit history and resolve
+Before you submit your PR (Pull Request), you should clean up your commit history and resolve
 any merge conflicts with `master` (or your upstream branch). While we
 recommend making a bunch of small commits while you're working, it's important
 to maintain a readable and useful commit history in the main repository.
