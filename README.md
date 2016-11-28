@@ -65,11 +65,15 @@ http://localhost:3000
 Please see [CONTRIBUTING.md](https://github.com/kmclellan/mstc/blob/master/CONTRIBUTING.md) for more detail.
 
  - Fork the repository using Github.
- - Checkout a named feature branch created from the development branch.
+ - Clone the repository to your local development space.
+ - Checkout a branch, named after the feature you will be adding, created from the master branch.
  - Write tests using rspec.
  - Complete modifications or corrections.
  - Run the tests, ensuring they all pass. (See [TESTING.md](https://github.com/kmclellan/mstc/blob/master/TESTING.md))
- - Contact lead developer, describe work done, submit a Pull Request to the development branch using Github.
+ - Commit your improvements.
+ - Pull the latest master to your feature branch and resolve any conflicts.
+ - Push your feature branch to your fork on Github.
+ - Contact lead developer, describe work done, submit a Pull Request using Github.
 
 If you have direct access to the repository then develop in a branch before merging to master.  DO NOT DEVELOP IN THE MASTER BRANCH.
 
