@@ -1,0 +1,45 @@
+# Introduction to Use Cases for Users
+
+Use cases are used in software programming to help define the goals of the software.  The goals they describe can be:
+
+ business goals (e.g. capture the details of all the MSTC's clients), 
+ user goals (being able to update client details), 
+ design goals (a nice, simple to use interface), 
+ programmatic goals (automatic generation of reports) etc...  
+
+A use case is normally a list of actions/interactions between a user and a system to achieve one or more of these goals.  
+
+In the case of the MSTC application, programers will use the list of actions in each use case to help them design the software.  So, as a user involved in helping to create a use case, you will not need to concern yourself with how the software achieves your goals.  You simply need to focus on the process that you want the system to capture (normally this would be a business process).  If you can think of an ideal method for a programmer to use then that would be great but your main goal is to keep it simple.  
+
+In other words, if you do not find it easy to think of the steps that you would need (or want) to go through to achieve your goal with the software then you simply need to focus on describing what you want the software to achieve to the best of your ability.
+
+Each Use Case consists of the following sections: Summary, Rationale, Users, Preconditions, Basic Course of Events, Alternative Paths, Postconditions
+
+### Summary
+
+A very brief outline of what is to be achieved.
+
+### Rationale
+
+The reasons behind the use case - why you need to achieve this particular goal.
+
+### Users
+
+The users whom the use case applies to.
+
+### Preconditions
+
+What needs to be in place or known (if anything) before a user can start the steps described in the use case (see below).
+
+Basic Course of Events
+
+A step by step list of SIMPLE actions that a user will take to achieve their goal.
+
+Alternative Paths
+
+Alternative steps, perhaps from different starting locations, to achieve the goal.  This section can also contain alternative steps/interactions the user may need to take depending on various conditions.
+
+Postconditions
+
+At the end of the steps, the goal of the use case is achieved.  Sometimes this needs to be stated plainly for the programmer - especially if the use case has captured or changed a lot of information.
+If you are a user then it is not always clear what to write here.  If not then do not worry about this section.
