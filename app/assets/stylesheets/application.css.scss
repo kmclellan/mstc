@@ -15,3 +15,20 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$footer-header-height: 50px;
+$footer-body-height: 50px;
+
+html {
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  }
+
+li.nav-text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
