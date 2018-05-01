@@ -6,12 +6,13 @@ An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Cent
 
 Initially created for the MS Therapy Centre Lothian http://www.mstc-lothian.org.uk/
 
-The software is intended to be run onsite on a dedicated linux based server.
+The software is intended to be run onsite on a dedicated linux based server but can also be run in the "cloud".
 
 Pull requests and bug reports are always welcome!
 
 ### Contents
-- [Installation](#installation)
+- [Installation](#installation-for-development)
+- [Contributing](#contributing)
 
 ## Initial Developmet
 
