@@ -6,7 +6,9 @@ An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Cent
 
 Initially created for the MS Therapy Centre Lothian http://www.mstc-lothian.org.uk/
 
-The software is intended to be run onsite on a dedicated linux based server but can also be run in the "cloud".
+The software is intended to be run onsite on a dedicated Linux based server but can also be run in the "cloud" (e.g. on Heroku).
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Pull requests and bug reports are always welcome!
 
