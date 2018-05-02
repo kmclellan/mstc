@@ -2,7 +2,7 @@
 
 **Multiple Sclerosis Therapy Centre Client, Resource and Therapy Session Management**
 
-An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Centres an integrated tool to manage clients, resources and oxygen therapy sessions.  Please see [Use Cases](https://github.com/kmclellan/mstc/wiki/Use-Cases) in the wiki for a view of where this project will be going and [Github issues](https://github.com/kmclellan/mstc/issues/) for the user stories that have been prioritised for development.
+An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Centres an integrated tool to manage clients, resources and oxygen therapy sessions.  Please see [Use Cases](https://github.com/kmclellan/mstc/wiki/Use-Cases) in the wiki for a view of where this project will be going and [GitHub issues](https://github.com/kmclellan/mstc/issues/) for the user stories that have been prioritised for development.
 
 Initially created for the MS Therapy Centre Lothian http://www.mstc-lothian.org.uk/
 
@@ -65,7 +65,7 @@ http://localhost:3000
 
 Please see [CONTRIBUTING.md](https://github.com/kmclellan/mstc/blob/master/CONTRIBUTING.md) for more detail.
 
- - Fork the repository using Github.
+ - Fork the repository using GitHub.
  - Clone the repository to your local development space.
  - Checkout a branch, named after the feature you will be adding, created from the master branch.
  - Write tests using rspec.
@@ -73,8 +73,8 @@ Please see [CONTRIBUTING.md](https://github.com/kmclellan/mstc/blob/master/CONTR
  - Run the tests, ensuring they all pass. (See [TESTING.md](https://github.com/kmclellan/mstc/blob/master/TESTING.md))
  - Commit your improvements.
  - Pull the latest master to your feature branch and resolve any conflicts.
- - Push your feature branch to your fork on Github.
- - Contact lead developer, describe work done, submit a Pull Request using Github.
+ - Push your feature branch to your fork on GitHub.
+ - Contact lead developer, describe work done, submit a Pull Request using GitHub.
 
 If you have direct access to the repository then develop in a branch before merging to master.  DO NOT DEVELOP IN THE MASTER BRANCH.
 
