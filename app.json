@@ -1,0 +1,14 @@
+{
+  "name": "MSTC",
+  "description": "Client, Resource and Therapy Session Management for MS Therapy Centres",
+  "website": "https://github.com/kmclellan/mstc",
+  "repository": "https://github.com/kmclellan/mstc",
+  "keywords": ["ruby", "rails"],
+  "success_url": "/",
+  "env": {
+    "SECRET_KEY_BASE": {
+      "description": "The secret based used for Rails.",
+      "generator": "secret"
+    }
+  }
+}
