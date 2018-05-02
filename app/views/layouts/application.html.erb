@@ -98,6 +98,13 @@
         </ul>
     </footer>
 <% end %>
+<% if Rails.env.production? %>
+    <footer>
+        <ul class="nav navbar-nav">
+          <li class="nav-text">Production</li>
+        </ul>
+    </footer>
+<% end %>
 
     <%= javascript_include_tag 'application' %>
 
