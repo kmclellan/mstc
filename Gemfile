@@ -3,9 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '5.2.0'
 gem 'bootsnap'
-# Use sqlite3 as the database for Active Record (test and dev)
-gem 'sqlite3'
-# Use pg (postgresql) as the database for Active Record (production)
+# Use pg (postgresql) as the database for Active Record (staging and production)
 gem 'pg'
 
 # Asset Pipeline
@@ -45,6 +43,8 @@ gem 'rails-html-sanitizer', '= 1.0.4'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+# Use sqlite3 as the database for Active Record (test and dev)
+  gem 'sqlite3'
   gem 'spring-commands-rspec'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
