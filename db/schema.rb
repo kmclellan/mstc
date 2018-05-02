@@ -10,20 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160512095216) do
+ActiveRecord::Schema.define(version: 2016_05_12_095216) do
 
   create_table "users", force: :cascade do |t|
-    t.string   "title"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "phone"
-    t.string   "mobile"
-    t.boolean  "admin"
-    t.string   "password_hash"
-    t.string   "password_salt"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string "title"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone"
+    t.string "mobile"
+    t.boolean "admin"
+    t.string "password_hash"
+    t.string "password_salt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
