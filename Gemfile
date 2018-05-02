@@ -29,10 +29,12 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
 # Dependencies to get Travis CI working
-gem 'loofah'
-gem 'xpath'
+gem 'loofah', '~> 2.2.2'
+gem 'xpath', '~> 3.0.0'
 gem 'rails-dom-testing'
 gem 'nokogiri', '~> 1.8.2'
+gem 'rails-html-sanitizer', '= 1.0.4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

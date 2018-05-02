@@ -4,5 +4,5 @@ branches:
   only:
     - master
 sudo: false
-bundler_args: --jobs=5 --retry=5
+bundler_args: --jobs=3 --retry=3
 script: bundle exec rake spec
