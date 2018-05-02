@@ -88,6 +88,17 @@
         </ul>
     </footer>
 <% end %>
+<% if Rails.env.staging? %>
+    <footer>
+        <ul class="nav navbar-nav">
+          <li class="nav-text">Staging Links:</li>
+          <li><%= link_to 'MSTC on GitHub', 'https://github.com/kmclellan/mstc' %></li>
+          <li><%= link_to 'Wiki', 'https://github.com/kmclellan/mstc/wiki' %></li>
+          <li><%= link_to 'Stories', 'https://github.com/kmclellan/mstc/issues' %></li>
+        </ul>
+    </footer>
+<% end %>
+
     <%= javascript_include_tag 'application' %>
 
 </body>
