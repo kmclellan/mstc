@@ -6,7 +6,7 @@ An open source, Ruby on Rails project to provide Multiple Sclerosis Therapy Cent
 
 Initially created for the MS Therapy Centre Lothian http://www.mstc-lothian.org.uk/
 
-The software is intended to be run onsite on a dedicated Linux based server but can also be run in the "cloud" (e.g. on Heroku).
+The software is intended to be run onsite on a dedicated Linux based server but can also be run in the "cloud" (for a demo, please [see the latest version running on Heroku](https://mstc.herokuapp.com/)).
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -27,7 +27,7 @@ Text files have been created (found under ./doc/) giving a very basic listing of
 Before you get started, the following needs to be installed:
 
   * **Ruby** (Linux) 2.3.1
-  * **Ruby** (Windows) 2.2.5  -  Will probably need the [DevKit](http://rubyinstaller.org/downloads/) and [Node.js](https://nodejs.org/en/). If you try 2.3.1 then please let me know if it works.
+  * **Ruby** (Windows) 2.2.5  -  Will probably need the [DevKit](http://rubyinstaller.org/downloads/) and [Node.js](https://nodejs.org/en/). 
   * [**RubyGems**](http://rubygems.org/)
   * **Bundler**: `gem install bundler`
   * [**Git**](http://help.github.com/git-installation-redirect)
@@ -48,16 +48,16 @@ bundle install
 Initiate your development database:
 
 ```
-bundle exec rake db:create
-bundle exec rake db:migrate
+bundle exec rails db:create
+bundle exec rails db:migrate
 ```
 
 (Currently do not have a schema to load.)
 
-To view the application run a Rack webserver.  In production this will be Phusion Passenger (simple and reliable deployment).  For development I am currently using Thin.
+To view the application run a Rack webserver.  In production this will be Phusion Passenger (simple and reliable deployment).  For development I am currently using Puma.
 
 ```
-bundle exec thin start
+bundle exec puma
 ```
 
 http://localhost:3000
