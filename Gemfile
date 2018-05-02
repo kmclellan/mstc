@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.1'
 gem 'rails', '5.2.0'
 gem 'bootsnap'
 # Use pg (postgresql) as the database for Active Record (staging and production)
