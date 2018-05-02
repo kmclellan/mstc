@@ -28,6 +28,11 @@ gem 'sdoc', '~> 1.0.0', group: :doc
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
+# Dependencies to get Travis CI working
+gem 'loofah'
+gem 'xpath'
+gem 'rails-dom-testing'
+gem 'nokogiri', '~> 1.8.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
