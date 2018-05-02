@@ -44,7 +44,7 @@ If you have direct access to the repository then develop in a branch before merg
 
 rubocop?
 Travis?
-Github pages?
+GitHub pages?
 labels?
 issues?
 LiceCap
