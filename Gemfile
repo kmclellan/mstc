@@ -33,8 +33,6 @@ gem 'rails-dom-testing'
 gem 'nokogiri', '~> 1.8.2'
 gem 'rails-html-sanitizer', '= 1.0.4'
 
-# webpacker for heroku
-gem 'webpacker'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
