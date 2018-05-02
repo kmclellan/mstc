@@ -1,0 +1,12 @@
+build:
+  languages:
+    - ruby
+  packages:
+    - yarn
+  config:
+    RAILS_ENV: staging
+release:
+  command:
+    - rake db:migrate
+run:
+  web: bundle exec puma -C config/puma.rb
