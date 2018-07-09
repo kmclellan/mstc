@@ -30,7 +30,7 @@ gem 'autoprefixer-rails'
 gem 'loofah', '~> 2.2.2'
 gem 'xpath', '~> 3.1.0'
 gem 'rails-dom-testing'
-gem 'nokogiri', '~> 1.8.3'
+gem 'nokogiri', '~> 1.8.4'
 gem 'rails-html-sanitizer', '= 1.0.4'
 
 # Use ActiveModel has_secure_password
