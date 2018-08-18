@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get  '/about',     to: 'pages#about'
   get  '/contact',   to: 'pages#contact'
   get  '/users/new', to: 'users#new'
+  post '/users/new', to: 'users#create'
+  resources :users
 end

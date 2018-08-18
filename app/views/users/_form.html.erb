@@ -1,0 +1,20 @@
+<%= form_for(@user, url: users_new_path) do |f| %>
+  <%= render 'messages/errors' %>
+
+  <%= f.label :firstname, "First name"  %>
+  <%= f.text_field :firstname, class: 'form-control' %>
+
+  <%= f.label :lastname, "Last name"  %>
+  <%= f.text_field :lastname, class: 'form-control' %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, class: 'form-control' %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, class: 'form-control' %>
+
+  <%= f.label :password_confirmation, "Confirm Password" %>
+  <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
