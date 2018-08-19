@@ -3,7 +3,7 @@ require 'test_helper'
 class UsersNewTest < ActionDispatch::IntegrationTest
   test "invalid new user information" do
     get users_new_path
-  #  assert_select 'form[action="/users/new"]'
+    #  assert_select 'form[action="/users/new"]'
     assert_no_difference 'User.count' do
       post users_path, params: { user: { firstname:  "",
                                          lastname: "",
@@ -18,7 +18,7 @@ class UsersNewTest < ActionDispatch::IntegrationTest
 
   test "valid signup information" do
     get users_new_path
-  #  assert_select 'form[action="/users/new"]'
+    #  assert_select 'form[action="/users/new"]'
     assert_difference 'User.count', 1 do
       post users_path, params: { user: { firstname:  "John",
                                          lastname: "Doe",
