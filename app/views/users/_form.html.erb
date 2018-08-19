@@ -1,5 +1,5 @@
 <%= form_for @user do |f| %>
-  <%= render 'messages/errors' %>
+  <%= render 'messages/errors', object: @user %>
 
   <%= f.label :firstname, "First name"  %>
   <%= f.text_field :firstname, class: 'form-control' %>
