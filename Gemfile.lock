@@ -287,7 +287,7 @@ GEM
     mini_magick (4.7.0)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
-    minitest (5.10.3)
+    minitest (5.11.3)
     minitest-reporters (1.1.14)
       ansi
       builder
@@ -442,7 +442,7 @@ DEPENDENCIES
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)
   mini_magick (= 4.7.0)
-  minitest (= 5.10.3)
+  minitest (= 5.11.3)
   minitest-reporters (= 1.1.14)
   pg (= 0.20.0)
   puma (= 3.12.0)
