@@ -1,3 +1,7 @@
 <li>
-  <%= link_to user.firstname, user %>
+  <%= user.firstname %> <%= user.lastname %>, <%= user.email %> | <%= link_to "Edit", user %>
+  <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to "Delete", user, method: :delete,
+                  data: { confirm: "Confirm Account Deletion" } %>
+  <% end %>
 </li>
