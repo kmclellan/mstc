@@ -1,5 +1,5 @@
 <% provide(:title, "User Information") %>
 <h1>User Information</h1>
 <p>
-  <%= @user.firstname %> <%= @user.lastname %>, <%= @user.email %> <%= link_to "Edit", '#' %>
+  <%= @user.firstname %> <%= @user.lastname %>, <%= @user.email %> <%= link_to "Edit", edit_user_path(current_user) %>
 </p>
