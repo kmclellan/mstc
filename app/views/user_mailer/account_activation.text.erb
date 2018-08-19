@@ -1,0 +1,5 @@
+Hi <%= @user.firstname %>,
+
+Activate your account:
+
+<%= edit_user_activation_url(@user.activation_token, email: @user.email) %>
