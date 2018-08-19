@@ -58,7 +58,7 @@ GEM
     bootstrap-will_paginate (1.0.0)
       will_paginate
     builder (3.2.3)
-    byebug (9.0.6)
+    byebug (10.0.2)
     carrierwave (1.2.2)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -431,7 +431,7 @@ DEPENDENCIES
   bootsnap
   bootstrap-sass (= 3.3.7)
   bootstrap-will_paginate (= 1.0.0)
-  byebug (= 9.0.6)
+  byebug (= 10.0.2)
   carrierwave (= 1.2.2)
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
