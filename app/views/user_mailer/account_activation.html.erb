@@ -1,10 +1,14 @@
-<h1>Sample App</h1>
-
-<p>Hi <%= @user.firstname %>,</p>
+<p><h1>Hi <%= @user.firstname %>!</h1></p>
 
 <p>
-  Activate your account:
+  Welcome to MSTC! Please click on the link below to fully activate your account:
 </p>
-
-<%= link_to "Activate", edit_user_activation_url(@user.activation_token,
-                                                    email: @user.email) %>
+<p>
+  <%= link_to "User Activation", edit_user_activation_url(@user.activation_token, email: @user.email) %>
+</p><p>
+  This is an automated message. Please do not reply to this email address. If you did not sign up to MSTC, ignore this email and no account will be created.
+</p>
+<p>
+  Regards,<br>
+  <b>MSTC</b>
+</p>
