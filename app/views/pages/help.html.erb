@@ -1,5 +1,27 @@
 <% provide(:title, 'Help') %>
+
 <h1>Help</h1>
-<p>
-  Help page.
-</p>
+
+<h3 id="initial-developmet">Initial Developmet</h3>
+<p>Text files have been created (found under ./doc/) giving a very basic listing of features that are required or desired.  These documents should provide a general idea of the controlers and data fields which need to be created.</p>
+<h3 id="installation-for-development">Installation for Development</h3>
+<p>Before you get started, the following needs to be installed:</p>
+<ul>
+  <li><strong>Ruby</strong> (Linux) 2.5.1</li>
+  <li><strong>Ruby</strong> (Windows) 2.2.5  -  Will probably need the <a href="http://rubyinstaller.org/downloads/">DevKit</a> and <a href="https://nodejs.org/en/">Node.js</a>. </li>
+  <li><a href="http://rubygems.org/"><strong>RubyGems</strong></a></li>
+  <li><strong>Bundler</strong>: <code>gem install bundler</code></li>
+  <li><a href="http://help.github.com/git-installation-redirect"><strong>Git</strong></a></li>
+</ul>
+<p>Grab the code:</p>
+<pre><code>git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>://github.com/kmclellan/mstc.git
+</code></pre><p>Install the dependancies:</p>
+<pre><code><span class="hljs-symbol">cd</span> mstc
+<span class="hljs-keyword">bundle </span>install
+</code></pre><p>Initiate your development database:</p>
+<pre><code>bundle <span class="hljs-built_in">exec</span> rails db:<span class="hljs-keyword">create</span>
+bundle <span class="hljs-built_in">exec</span> rails db:migrate
+</code></pre><p>(Currently do not have a schema to load.)</p>
+<p>To view the application run a Rack webserver.  In production this will be Phusion Passenger (simple and reliable deployment).  For development I am currently using Puma.</p>
+<pre><code><span class="hljs-keyword">bundle </span>exec puma
+</code></pre><br><p><a href="http://localhost:3000">http://localhost:3000</a></p>
