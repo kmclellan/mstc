@@ -1,7 +1,15 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-inverse navbar-fixed-top ">
   <div class="container">
-    <%= link_to "MS Therapy Centre Lothian", 'http://www.mstc-lothian.org.uk/', id: "logo" %>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <%= link_to "MS Therapy Centre Lothian", 'http://www.mstc-lothian.org.uk/', id: "logo", class: "navbar-brand" %>
+    </div>
     <nav>
+      <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",     home_path %></li>
         <li><%= link_to "About",    about_path %></li>
@@ -18,6 +26,9 @@
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
+      </div>
     </nav>
   </div>
 </header>
+
+
