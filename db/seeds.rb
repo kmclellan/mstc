@@ -3,7 +3,6 @@ User.create!(firstname:  "William",
              email: "admin@email.com",
              password:              "12345678",
              password_confirmation: "12345678",
-             user_type: "admin",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
@@ -19,7 +18,6 @@ User.create!(firstname:  "William",
                email: email,
                password:              password,
                password_confirmation: password,
-               user_type: "basic",
                activated: true,
                activated_at: Time.zone.now)
 end

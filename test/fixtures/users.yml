@@ -3,7 +3,6 @@ alfred:
   lastname: Keane
   email: alfred.keane@email.com
   password_digest: <%= User.digest('password') %>
-  user_type: admin
   admin: true
   activated: true
   activated_at: <%= Time.zone.now %>
@@ -13,7 +12,6 @@ mary:
   lastname: Sue
   email: mary.sue@mail.com
   password_digest: <%= User.digest('password') %>
-  user_type: basic
   activated: true
   activated_at: <%= Time.zone.now %>
 
@@ -23,7 +21,6 @@ user_<%= n %>:
   lastname: <% "- #{n}" %>
   email: <%= "Testuser-#{n}@email.com" %>
   password_digest: <%= User.digest('password') %>
-  user_type: basic
   activated: true
   activated_at: <%= Time.zone.now %>
 <% end %>
