@@ -1,7 +1,11 @@
-Usertype.create!(user_type: "admin")
+utype = ["admin","therapist","volunteer","client"]
+utype.each do |t|
+  Usertype.create!(user_type: t)
+end
 
 User.create!(firstname:  "William",
              lastname: "Bland",
+             usertype_id: 1,
              email: "admin@email.com",
              password:              "12345678",
              password_confirmation: "12345678",

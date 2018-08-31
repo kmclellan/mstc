@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    redirect_to(root_url) unless current_user?(@user) || current_user.admin?
+    redirect_to(root_url) unless current_user?(@user) || current_user.usertype_id == 1
   end
 
   def create
@@ -55,7 +55,8 @@ class UsersController < ApplicationController
                                    :lastname,
                                    :email,
                                    :password,
-                                   :password_confirmation)
+                                   :password_confirmation,
+                                   :usertype_id)
     end
 
     def logged_in_user
@@ -68,11 +69,11 @@ class UsersController < ApplicationController
 
     def correct_user
       @user = User.find(params[:id])
-      redirect_to(root_url) unless current_user?(@user) || current_user.admin?
+      redirect_to(root_url) unless current_user?(@user) || current_user.usertype_id == 1
 
     end
 
     def admin_user
-      redirect_to(root_url) unless current_user.admin?
+      redirect_to(root_url) unless current_user.usertype_id == 1
     end
 end

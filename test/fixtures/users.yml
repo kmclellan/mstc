@@ -1,6 +1,7 @@
 alfred:
   firstname: Alfred
   lastname: Keane
+  usertype_id: 1
   email: alfred.keane@email.com
   password_digest: <%= User.digest('password') %>
   admin: true

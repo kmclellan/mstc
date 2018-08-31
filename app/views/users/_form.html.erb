@@ -16,5 +16,37 @@
   <%= f.label :password_confirmation, "Confirm Password" %>
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+  <% if current_user.try(:usertype_id)%>
+    <% if current_user.usertype_id == 1 %>
+        <%= f.label :usertype_id, "User Type" %>
+        <ul class="nav nav-pills">
+          <li><a data-toggle="tab" href="#menu1">Admin</a></li>
+            <%= f.hidden_field :usertype_id, class: 'form-control', value: 1 %>
+          <li><a data-toggle="tab" href="#menu2">Therapist</a></li>
+            <%= f.hidden_field :usertype_id, class: 'form-control', value: 2 %>
+          <li><a data-toggle="tab" href="#menu3">Volunteer</a></li>
+            <%= f.hidden_field :usertype_id, class: 'form-control', value: 3 %>
+          <li><a data-toggle="tab" href="#menu4">Client</a></li>
+            <%= f.hidden_field :usertype_id, class: 'form-control', value: 4 %>
+        </ul>
+    <% end %>
+<% end %>
+
+  <div class="tab-content">
+    <div id="menu1" class="tab-pane fade">
+      <p>Admin</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <p>Therapist</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <p>Volunteer</p>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+      <p>Client</p>
+    </div>
+  </div>
+  <br>
+
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
