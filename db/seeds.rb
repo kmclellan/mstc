@@ -1,3 +1,5 @@
+Usertype.create!(user_type: "admin")
+
 User.create!(firstname:  "William",
              lastname: "Bland",
              email: "admin@email.com",

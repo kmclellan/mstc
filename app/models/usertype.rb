@@ -1,0 +1,2 @@
+class Usertype < ApplicationRecord
+end
