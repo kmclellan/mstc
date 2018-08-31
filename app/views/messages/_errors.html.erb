@@ -1,9 +1,9 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-      This action contains <%= pluralize(@user.errors.count, "error") %>.
+        This action contains <%= pluralize(@user.errors.count, "error") %>.
     </div>
-    <ul>
+    <ul style="list-style-type:square">
       <% @user.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
