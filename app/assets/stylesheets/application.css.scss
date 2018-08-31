@@ -184,3 +184,10 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+/* Table user list links */
+
+.table-index a:link, a:visited, a:hover, a:active
+{
+  text-decoration: none;
+}

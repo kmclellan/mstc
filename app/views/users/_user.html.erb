@@ -1,10 +1,15 @@
-<li>
-  <%= user.firstname %> <%= user.lastname %>, <%= user.email %> | <%= link_to "Edit", edit_user_path(user) %>
-  <% if current_user.usertype_id == 1 && !current_user?(user) %>
-    | <%= link_to "Delete", user, method: :delete,
-                  data: { confirm: "Confirm Account Deletion" } %>
-  <% end %>
-</li>
-
+      <tr>
+        <td><%= user.id %> </td>
+        <td><%= user.firstname %> </td>
+        <td><%= user.lastname %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to "View", user_path(user) %></td>
+        <td><%= link_to "Edit", edit_user_path(user) %></td>
+        <td><% if current_user.usertype_id == 1 && !current_user?(user) %>
+            <%= link_to "Delete", user, method: :delete,
+                          data: { confirm: "Confirm Account Deletion" } %>
+          <% end %>
+        </td>
+      </tr>
 
 

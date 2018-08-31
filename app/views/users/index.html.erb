@@ -1,11 +1,27 @@
 <% provide(:title, 'Users list') %>
 <h1>Users list</h1>
 
-<%= will_paginate %>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped table-index">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
 
+      <%= render @users %>
 
-<ul class="users">
-  <%= render @users %>
-</ul>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <%= will_paginate %>
