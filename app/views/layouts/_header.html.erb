@@ -16,10 +16,19 @@
         <li><%= link_to "Contact",  contact_path %></li>
         <li><%= link_to "Help",     help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to "Account", current_user %></li>
-          <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Profile<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "View Information", current_user %></li>
+              <li><%= link_to "Edit Information", edit_user_path(current_user) %></li>
+            </ul>
+          </li>
           <% if current_user.usertype_id == 1 %>
-            <li><%= link_to "Users", users_path %></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">User management<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Users list", users_path %></li>
+                <li><%= link_to "Create user", users_new_path%></li>
+              </ul>
+            </li>
           <% end %>
           <li><%= link_to "Log out", logout_path, method: :delete %> </li>
         <% else %>
