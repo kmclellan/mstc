@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class PasswordResetsTest < ActionDispatch::IntegrationTest
@@ -6,10 +8,10 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     @user = users(:alfred)
   end
 
-  test "password resets" do
+  test 'password resets' do
     get new_password_reset_path
     assert_template 'password_resets/new'
-    post password_resets_path, params: { password_reset: { email: "" } }
+    post password_resets_path, params: { password_reset: { email: '' } }
     assert_not flash.empty?
     assert_template 'password_resets/new'
     post password_resets_path,
@@ -19,7 +21,7 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     assert_not flash.empty?
     assert_redirected_to root_url
     user = assigns(:user)
-    get edit_password_reset_path(user.reset_token, email: "")
+    get edit_password_reset_path(user.reset_token, email: '')
     assert_redirected_to root_url
     user.toggle!(:activated)
     get edit_password_reset_path(user.reset_token, email: user.email)
@@ -29,28 +31,28 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_url
     get edit_password_reset_path(user.reset_token, email: user.email)
     assert_template 'password_resets/edit'
-    assert_select "input[name=email][type=hidden][value=?]", user.email
+    assert_select 'input[name=email][type=hidden][value=?]', user.email
     patch password_reset_path(user.reset_token),
           params: { email: user.email,
-                    user: { password:              "12345678",
-                            password_confirmation: "00000000" } }
+                    user: { password:              '12345678',
+                            password_confirmation: '00000000' } }
     assert_select 'div#error_explanation'
     patch password_reset_path(user.reset_token),
           params: { email: user.email,
-                    user: { password:              "",
-                            password_confirmation: "" } }
+                    user: { password:              '',
+                            password_confirmation: '' } }
     assert_select 'div#error_explanation'
     patch password_reset_path(user.reset_token),
           params: { email: user.email,
-                    user: { password:              "12345678",
-                            password_confirmation: "12345678" } }
+                    user: { password:              '12345678',
+                            password_confirmation: '12345678' } }
     assert_nil user.reload.reset_digest
-    assert is_logged_in?
+    assert logged_in?
     assert_not flash.empty?
     assert_redirected_to user
   end
 
-  test "expired token" do
+  test 'expired token' do
     get new_password_reset_path
     post password_resets_path,
          params: { password_reset: { email: @user.email } }
@@ -58,8 +60,8 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     @user.update_attribute(:reset_sent_at, 3.hours.ago)
     patch password_reset_path(@user.reset_token),
           params: { email: @user.email,
-                    user: { password:              "12345678",
-                            password_confirmation: "12345678" } }
+                    user: { password:              '12345678',
+                            password_confirmation: '12345678' } }
     assert_response :redirect
     follow_redirect!
     assert_match /expired/i, response.body

@@ -6,16 +6,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <%= link_to "MS Therapy Centre Lothian", 'http://www.mstc-lothian.org.uk/', id: "logo", class: "navbar-brand" %>
+    <%= link_to "MS Therapy Centre Lothian", root_path, id: "logo", class: "navbar-brand" %>
     </div>
     <nav>
       <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",     home_path %></li>
-        <li><%= link_to "About",    about_path %></li>
-        <li><%= link_to "Contact",  contact_path %></li>
-        <li><%= link_to "Help",     help_path %></li>
         <% if logged_in? %>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Info<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "About",    about_path %></li>
+                  <li><%= link_to "Contact",  contact_path %></li>
+                  <li><%= link_to "Help",     help_path %></li>
+                </ul>
+              </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Profile<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%= link_to "View Information", current_user %></li>
@@ -26,12 +31,21 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">User management<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Users list", users_path %></li>
-                <li><%= link_to "Create user", users_new_path%></li>
+                <li><%= link_to "Create user", users_new_path %></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Resource management<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Resource list", "#" %></li>
+                <li><%= link_to "Create Resource", "#" %></li>
               </ul>
             </li>
           <% end %>
           <li><%= link_to "Log out", logout_path, method: :delete %> </li>
         <% else %>
+          <li><%= link_to "About",    about_path %></li>
+          <li><%= link_to "Contact",  contact_path %></li>
+          <li><%= link_to "Help",     help_path %></li>
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
