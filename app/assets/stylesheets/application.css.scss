@@ -63,6 +63,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
@@ -71,7 +72,12 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: $gray-dark;
+
+}
+
+h3 {
+  font-weight: bold;
 }
 
 p {
@@ -92,7 +98,7 @@ p {
   padding-top: 14px;
   font-weight: bold;
   &:hover {
-    color: $gray-medium-light;
+    color: white;
     text-decoration: none;
   }
 }
@@ -193,3 +199,7 @@ input {
 }
 
 .text-center {text-align: center;}
+
+/* Jumbotron */
+
+.jumbo-title {margin-bottom: 0px}
