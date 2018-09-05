@@ -18,7 +18,7 @@ gem 'mini_magick', '4.7.0'
 gem 'puma', '3.12.0'
 gem 'rails', '5.2.1'
 gem 'sass-rails', '5.0.6'
-gem 'turbolinks', '5.0.1'
+gem 'turbolinks', '5.2.0'
 gem 'uglifier', '4.1.18'
 gem 'will_paginate', '3.1.6'
 
