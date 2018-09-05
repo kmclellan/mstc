@@ -21,6 +21,7 @@ gem 'sass-rails', '5.0.7'
 gem 'turbolinks', '5.2.0'
 gem 'uglifier', '4.1.18'
 gem 'will_paginate', '3.1.6'
+gem 'cloudinary'
 
 group :development, :test do
   gem 'byebug',  '10.0.2', platform: :mri
