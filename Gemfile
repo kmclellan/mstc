@@ -14,11 +14,11 @@ gem 'coffee-rails', '4.2.2'
 gem 'faker', '1.7.3'
 gem 'jbuilder', '2.7.0'
 gem 'jquery-rails', '4.3.3'
-gem 'mini_magick', '4.7.0'
+gem 'mini_magick', '4.8.0'
 gem 'puma', '3.12.0'
 gem 'rails', '5.2.1'
-gem 'sass-rails', '5.0.6'
-gem 'turbolinks', '5.0.1'
+gem 'sass-rails', '5.0.7'
+gem 'turbolinks', '5.2.0'
 gem 'uglifier', '4.1.18'
 gem 'will_paginate', '3.1.6'
 
@@ -36,7 +36,7 @@ group :development do
 end
 
 group :test do
-  gem 'guard',                    '2.14.1'
+  gem 'guard',                    '2.14.2'
   gem 'guard-minitest',           '2.4.6'
   gem 'minitest',                 '5.11.3'
   gem 'minitest-reporters',       '1.3.4'
