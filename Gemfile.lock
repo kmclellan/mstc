@@ -77,6 +77,7 @@ GEM
     crass (1.0.4)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
+    dry-inflector (0.1.2)
     erubi (1.7.1)
     excon (0.62.0)
     execjs (2.7.0)
@@ -85,7 +86,7 @@ GEM
     ffi (1.9.25)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (1.42.0)
+    fog (2.0.0)
       fog-aliyun (>= 0.1.0)
       fog-atmos
       fog-aws (>= 0.6.0)
@@ -133,10 +134,10 @@ GEM
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-brightbox (0.15.0)
-      fog-core (~> 1.22)
+    fog-brightbox (0.16.0)
+      dry-inflector
+      fog-core
       fog-json
-      inflecto (~> 0.0.2)
       mime-types
     fog-cloudatcost (0.1.2)
       fog-core (~> 1.36)
@@ -178,11 +179,11 @@ GEM
       multi_json (~> 1.10)
     fog-local (0.5.0)
       fog-core (>= 1.27, < 3.0)
-    fog-openstack (0.1.27)
+    fog-openstack (0.2.1)
       fog-core (~> 1.45.0)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
-    fog-ovirt (1.1.1)
+    fog-ovirt (1.1.2)
       fog-core
       fog-json
       fog-xml
@@ -258,7 +259,6 @@ GEM
       domain_name (~> 0.5)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    inflecto (0.0.2)
     ipaddress (0.8.3)
     jaro_winkler (1.5.1)
     jbuilder (2.7.0)
@@ -290,7 +290,7 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
-    minitest-reporters (1.3.2)
+    minitest-reporters (1.3.4)
       ansi
       builder
       minitest (>= 5.0)
@@ -402,7 +402,7 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    trollop (2.1.3)
+    trollop (2.9.9)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.2.0)
@@ -414,7 +414,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.5)
     unicode-display_width (1.4.0)
-    web-console (3.5.1)
+    web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
@@ -438,7 +438,7 @@ DEPENDENCIES
   carrierwave (= 1.2.3)
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
-  fog (= 1.42)
+  fog (= 2.0.0)
   guard (= 2.14.1)
   guard-minitest (= 2.4.6)
   jbuilder (= 2.7.0)
@@ -446,7 +446,7 @@ DEPENDENCIES
   listen (= 3.1.5)
   mini_magick (= 4.7.0)
   minitest (= 5.11.3)
-  minitest-reporters (= 1.3.2)
+  minitest-reporters (= 1.3.4)
   pg (= 1.1.2)
   puma (= 3.12.0)
   rails (= 5.2.1)
@@ -459,7 +459,7 @@ DEPENDENCIES
   turbolinks (= 5.0.1)
   tzinfo-data
   uglifier (= 4.1.18)
-  web-console (= 3.5.1)
+  web-console (= 3.7.0)
   will_paginate (= 3.1.6)
 
 RUBY VERSION

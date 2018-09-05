@@ -32,19 +32,19 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
-  gem 'web-console',           '3.5.1'
+  gem 'web-console',           '3.7.0'
 end
 
 group :test do
   gem 'guard',                    '2.14.1'
   gem 'guard-minitest',           '2.4.6'
   gem 'minitest',                 '5.11.3'
-  gem 'minitest-reporters',       '1.3.2'
+  gem 'minitest-reporters',       '1.3.4'
   gem 'rails-controller-testing', '1.0.2'
 end
 
 group :production do
-  gem 'fog', '1.42'
+  gem 'fog', '2.0.0'
   gem 'pg',  '1.1.2'
 end
 
