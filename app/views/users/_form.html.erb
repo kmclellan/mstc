@@ -16,6 +16,15 @@
   <%= f.label :password_confirmation, "Confirm Password" %>
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+  <%= f.label :address, "Address"  %>
+  <%= f.text_field :address, class: 'form-control'%>
+
+  <%= f.label :tel_home, "Telephone (home)"  %>
+  <%= f.text_field :tel_home, class: 'form-control'%>
+
+  <%= f.label :tel_mob, "Telephone (mobile)"  %>
+  <%= f.text_field :tel_mob, class: 'form-control'%>
+
   <% if current_user.try(:usertype_id)%>
     <% if current_user.usertype_id == 1 %>
         <%= f.label :usertype_id, "User Type" %>

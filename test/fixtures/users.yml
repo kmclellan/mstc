@@ -4,6 +4,7 @@ alfred:
   usertype_id: 1
   email: alfred.keane@email.com
   password_digest: <%= User.digest('password') %>
+  address: 54, Kelvin Road, London
   admin: true
   activated: true
   activated_at: <%= Time.zone.now %>
@@ -13,6 +14,7 @@ mary:
   lastname: Sue
   email: mary.sue@mail.com
   password_digest: <%= User.digest('password') %>
+  address: 2, James Street, Manchester
   activated: true
   activated_at: <%= Time.zone.now %>
 
@@ -22,6 +24,7 @@ user_<%= n %>:
   lastname: <% "- #{n}" %>
   email: <%= "Testuser-#{n}@email.com" %>
   password_digest: <%= User.digest('password') %>
+  address: <%= "#{n}, Right Street, Newcastle" %>
   activated: true
   activated_at: <%= Time.zone.now %>
 <% end %>

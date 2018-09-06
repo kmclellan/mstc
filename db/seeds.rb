@@ -11,6 +11,7 @@ User.create!(firstname:  'William',
              email: 'admin@email.com',
              password:              '12345678',
              password_confirmation: '12345678',
+             address: "94, FL street, Aberdeen",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
@@ -20,6 +21,7 @@ User.create!(firstname:  'William',
   lastname = Faker::Name.last_name
   email = "basic.user.#{n + 1}@email.com"
   password = '12345678'
+  Faker::Address.full_address
   User.create!(firstname:  firstname,
                lastname: lastname,
                email: email,

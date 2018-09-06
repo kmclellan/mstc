@@ -57,7 +57,10 @@ class UsersController < ApplicationController
                                  :email,
                                  :password,
                                  :password_confirmation,
-                                 :usertype_id)
+                                 :usertype_id,
+                                 :address,
+                                 :tel_home,
+                                 :tel_mob)
   end
 
   def logged_in_user
