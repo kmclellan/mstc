@@ -13,15 +13,21 @@ class ResourcesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should redirect when not logged in as admin" do
+  test "should redirect resource creation when not logged in as admin" do
     log_in_as(@other_user)
     get resources_new_path
     assert_redirected_to root_url
   end
 
-  test "should redirect when not logged in" do
+  test "should redirect resource creation when not logged in" do
     get resources_new_path
     assert_redirected_to root_url
   end
+
+  test "should redirect resources list when not logged in" do
+    get resources_path
+    assert_redirected_to root_url
+  end
+
 
 end

@@ -1,5 +1,9 @@
 class ResourcesController < ApplicationController
-  before_action :admin_user,   only: %i[new edit update]
+  before_action :admin_user,   only: %i[new index edit update]
+
+  def index
+    @resources = Resource.paginate(page: params[:page])
+  end
 
   def show
     @resource = Resource.find(params[:id])
