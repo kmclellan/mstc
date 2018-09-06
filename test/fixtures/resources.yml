@@ -1,3 +1,13 @@
 room1:
   title: Room 1
   description: Room dedicated to oxygen sessions
+
+room2:
+  title: Room 2
+  description: Therapy Room
+
+<% 50.times do |n| %>
+room<%= n %>:
+  title:  <% "Room #{n}" %>
+  description: <% "Description #{n}" %>
+<% end %>

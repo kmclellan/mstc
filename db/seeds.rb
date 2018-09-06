@@ -31,13 +31,8 @@ User.create!(firstname:  'William',
                activated_at: Time.zone.now)
 end
 
-10.times do  |n|
+50.times do |n|
   title = "Room #{n + 1}"
-  description = Faker::Lorem.sentence(5)
-  Resource.create!(title:  title,
-                   description: description)
-
-  title = "Machine #{n + 1}"
   description = Faker::Lorem.sentence(5)
   Resource.create!(title:  title,
                    description: description)
