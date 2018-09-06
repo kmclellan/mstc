@@ -1,4 +1,6 @@
 class ResourcesController < ApplicationController
+  before_action :admin_user,   only: %i[new edit update]
+
   def show
     @resource = Resource.find(params[:id])
   end
@@ -17,9 +19,27 @@ class ResourcesController < ApplicationController
     end
   end
 
+  def edit
+    @resource = Resource.find(params[:id])
+  end
+
+  def update
+    @resource = Resource.find(params[:id])
+    if @resource.update_attributes(resource_params)
+      flash[:success] = "Success! Resource has been updated"
+      redirect_to @resource
+    else
+      render 'edit'
+    end
+  end
+
   private
 
   def resource_params
     params.require(:resource).permit(:title, :description)
+  end
+
+  def admin_user
+    redirect_to(root_url) unless logged_in? && current_user.usertype_id == 1
   end
 end

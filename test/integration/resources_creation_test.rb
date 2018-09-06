@@ -12,11 +12,12 @@ class ResourcesCreationTest < ActionDispatch::IntegrationTest
     assert_select 'div.field_with_errors'
   end
 
+
   test "valid resource creation information" do
     get resources_new_path
     assert_difference 'Resource.count', 1 do
-      post resources_path, params: { resource: { title:  "Room 1",
-                                                 description: "Room dedicated to Oxygen Sessions"} }
+      post resources_path, params: { resource: { title:  "Resource",
+                                         description: "Resource Description"} }
     end
     follow_redirect!
     assert_template 'resources/show'
