@@ -4,5 +4,7 @@
   <td><%= resource.description %></td>
   <td><%= link_to "View", resource_path(resource) %></td>
   <td><%= link_to "Edit", edit_resource_path(resource) %></td>
-  <td><%= link_to "Delete", edit_resource_path(resource) %></td>
+  <td><%= link_to "Delete", resource, method: :delete,
+                  data: { confirm: "Confirm Account Deletion" } %>
+  </td>
 </tr>

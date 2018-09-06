@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  before_action :admin_user,   only: %i[new index edit update]
+  before_action :admin_user,   only: %i[new index edit update :destroy]
 
   def index
     @resources = Resource.paginate(page: params[:page])
@@ -37,6 +37,11 @@ class ResourcesController < ApplicationController
     end
   end
 
+  def destroy
+    Resource.find(params[:id]).destroy
+    flash[:success] = "Success! Resource has been deleted"
+    redirect_to resources_url
+  end
   private
 
   def resource_params
