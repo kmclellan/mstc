@@ -1,0 +1,11 @@
+<%= form_for @resource do |f| %>
+  <%= render 'messages/resource_errors', object: @resource %>
+
+  <%= f.label :title, "Resource title"  %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+  <%= f.label :description, "Description"  %>
+  <%= f.text_field :description, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

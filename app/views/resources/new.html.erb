@@ -1,2 +1,8 @@
-<h1>Resources#new</h1>
-<p>Find me in app/views/resources/new.html.erb</p>
+<% provide(:title, 'Resource Creation') %>
+<% provide(:button_text, 'Create') %>
+<h1>Resource Creation</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render 'form' %>
+  </div>
+</div>

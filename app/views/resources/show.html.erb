@@ -1,0 +1,5 @@
+<% provide(:title, "Resource Information") %>
+<h1>Resource Information</h1>
+<p>
+  <%= @resource.title %>, <%= @resource.description %>, <%= link_to "Edit", edit_resource_path(@resource.id) %>
+</p>
