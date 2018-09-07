@@ -10,4 +10,5 @@ room2:
 room<%= n %>:
   title:  <% "Room #{n}" %>
   description: <% "Description #{n}" %>
+  hourly_rate: 10
 <% end %>

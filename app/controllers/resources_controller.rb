@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  before_action :admin_user,   only: %i[new index edit update :destroy]
+  before_action :admin_user,   only: %i[new index edit update destroy]
 
   def index
     @resources = Resource.paginate(page: params[:page])
@@ -45,7 +45,7 @@ class ResourcesController < ApplicationController
   private
 
   def resource_params
-    params.require(:resource).permit(:title, :description)
+    params.require(:resource).permit(:title, :description, :hourly_rate)
   end
 
   def admin_user

@@ -2,7 +2,9 @@ require 'test_helper'
 
 class ResourceTest < ActiveSupport::TestCase
   def setup
-    @resource = Resource.new(title: "Room 5", description: "Room dedicated for Oxygen sessions")
+    @resource = Resource.new(title: "Room 5",
+                             description: "Room dedicated for Oxygen sessions",
+                             hourly_rate: 10)
   end
 
   test "should be valid" do

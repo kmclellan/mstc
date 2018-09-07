@@ -32,8 +32,10 @@ User.create!(firstname:  'William',
 end
 
 50.times do |n|
-  title = "Room #{n + 1}"
+  title = "Object #{n + 1}"
   description = Faker::Lorem.sentence(5)
+  hourly_rate = Faker::Number.decimal(2)
   Resource.create!(title:  title,
-                   description: description)
+                   description: description,
+                   hourly_rate: hourly_rate)
 end
