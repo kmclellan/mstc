@@ -5,4 +5,11 @@ branches:
     - master
 sudo: false
 bundler_args: --jobs=3 --retry=3
-script: bundle exec rake spec
+env:
+  - DB=postgresql
+script:
+  - bundle exec rake db:migrate
+  - bundle exec rake db:test:prepare
+  - bundle exec rake test
+before_script:
+  - bundle exec rake db:create RAILS_ENV=test

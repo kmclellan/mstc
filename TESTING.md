@@ -1,9 +1,9 @@
 ## Unit Tests
 
-The code is unit tested with rspec. To run these tests, use rake:
+The code is unit tested with minitest. To run these tests, use rake:
 
 ```
-bundle exec rake spec
+bundle exec rake test
 ```
 
 ## Guard
