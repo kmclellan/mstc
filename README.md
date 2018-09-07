@@ -26,7 +26,7 @@ Text files have been created (found under ./doc/) giving a very basic listing of
 
 Before you get started, the following needs to be installed:
 
-  * **Ruby** (Linux) 2.3.1
+  * **Ruby** (Linux) 2.5.1
   * **Ruby** (Windows) 2.2.5  -  Will probably need the [DevKit](http://rubyinstaller.org/downloads/) and [Node.js](https://nodejs.org/en/). 
   * [**RubyGems**](http://rubygems.org/)
   * **Bundler**: `gem install bundler`
@@ -70,7 +70,7 @@ Please see [CONTRIBUTING.md](https://github.com/kmclellan/mstc/blob/master/CONTR
  - Fork the repository using GitHub.
  - Clone the repository to your local development space.
  - Checkout a branch, named after the feature you will be adding, created from the master branch.
- - Write tests using rspec.
+ - Write tests using minitest.
  - Complete modifications or corrections.
  - Run the tests, ensuring they all pass. (See [TESTING.md](https://github.com/kmclellan/mstc/blob/master/TESTING.md))
  - Commit your improvements.

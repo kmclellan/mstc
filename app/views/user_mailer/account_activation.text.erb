@@ -1,0 +1,10 @@
+Hi <%= @user.firstname %>!,
+
+Welcome to MSTC! Please click on the link below to fully activate your account:
+
+<%= edit_user_activation_url(@user.activation_token, email: @user.email) %>
+
+This is an automated message. Please do not reply to this email address. If you did not sign up to MSTC, ignore this email and no account will be created.
+
+Regards,
+MSTC

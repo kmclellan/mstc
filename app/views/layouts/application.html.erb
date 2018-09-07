@@ -1,112 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= tag :link, { rel: 'shortcut icon', href: image_path('favicon.ico') }, true %>
-    <title>
-      <%= content_for?(:title) ? "#{yield :title} - " : "" %>MSTC
-    </title>
-
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to 'MSTC', 'http://www.mstc-lothian.org.uk/', class: 'navbar-brand' %>
-        </div>
-
-        <div class="collapse navbar-collapse" id="primary-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <% if request.path == root_path %>
-              <li class="active"><%= link_to 'Home', root_path %></li>
-            <% else %>
-              <li><%= link_to 'Home', root_path %></li>
-            <% end %>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-
-      <% if content_for?(:title) %>
-        <hgroup class="page-header">
-          <% if content_for?(:toolbar) %>
-            <div class="pull-right">
-              <%= yield :toolbar %>
-            </div>
-          <% end %>
-
-          <h1><%= yield :title %></h1>
-        </hgroup>
-      <% end %>
-
-      <section id="flash">
-        <% if notice.present? %>
-          <div class="alert alert-success alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert">
-              <span aria-hidden="true">&times;</span>
-              <span class="sr-only">Close</span>
-            </button>
-
-            <%= notice.html_safe %>
-          </div>
-        <% end %>
-
-        <% if alert.present? %>
-          <div class="alert alert-danger alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert">
-              <span aria-hidden="true">&times;</span>
-              <span class="sr-only">Close</span>
-            </button>
-
-            <%= alert.html_safe %>
-          </div>
-        <% end %>
-      </section>
-
-    <article id="main" role="main">
-      <%= yield %>
-    </article>
-<% if Rails.env.development? %>
-    <footer>
-        <ul class="nav navbar-nav">
-          <li class="nav-text">Development Links:</li>
-          <li><%= link_to 'MSTC on GitHub', 'https://github.com/kmclellan/mstc' %></li>
-          <li><%= link_to 'Wiki', 'https://github.com/kmclellan/mstc/wiki' %></li>
-          <li><%= link_to 'Stories', 'https://github.com/kmclellan/mstc/issues' %></li>
-        </ul>
-    </footer>
-<% end %>
-<% if Rails.env.staging? %>
-    <footer>
-        <ul class="nav navbar-nav">
-          <li class="nav-text">Staging Links:</li>
-          <li><%= link_to 'MSTC on GitHub', 'https://github.com/kmclellan/mstc' %></li>
-          <li><%= link_to 'Wiki', 'https://github.com/kmclellan/mstc/wiki' %></li>
-          <li><%= link_to 'Stories', 'https://github.com/kmclellan/mstc/issues' %></li>
-        </ul>
-    </footer>
-<% end %>
-<% if Rails.env.production? %>
-    <footer>
-        <ul class="nav navbar-nav">
-          <li class="nav-text">Production</li>
-        </ul>
-    </footer>
-<% end %>
-
-    <%= javascript_include_tag 'application' %>
-
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= render 'layouts/rails' %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+<%= render 'layouts/header' %>
+<div class="container">
+  <% flash.each do |message_type, message| %>
+    <%= content_tag(:div, message, class: "alert alert-#{message_type} alert-dismissible") %>
+  <% end %>
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+  <%= debug(params) if Rails.env.development? %>
+</div>
 </body>
 </html>

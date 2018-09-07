@@ -10,20 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2016_05_12_095216) do
+ActiveRecord::Schema.define(version: 2018_09_06_182603) do
 
-  create_table "users", force: :cascade do |t|
-    t.string "title"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "phone"
-    t.string "mobile"
-    t.boolean "admin"
-    t.string "password_hash"
-    t.string "password_salt"
+  create_table "resources", force: :cascade do |t|
+    t.string "description"
+    t.string "string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title"
+    t.index ["title"], name: "index_resources_on_title", unique: true
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.integer "usertype_id"
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.string "remember_digest"
+    t.boolean "admin", default: false
+    t.string "activation_digest"
+    t.boolean "activated", default: false
+    t.datetime "activated_at"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
+    t.string "address"
+    t.integer "tel_home"
+    t.integer "tel_mob"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["usertype_id"], name: "index_users_on_usertype_id"
+  end
+
+  create_table "usertypes", force: :cascade do |t|
+    t.text "user_type"
   end
 
 end
