@@ -5,7 +5,8 @@
         <td><%= user.email %></td>
         <td><%= link_to "View", user_path(user) %></td>
         <td><%= link_to "Edit", edit_user_path(user) %></td>
-        <td><% if current_user.usertype_id == 1 && !current_user?(user) %>
+        <% admin = Admin.where(user_id: user.id) %>
+        <td><% if admin.empty? %>
             <%= link_to "Delete", user, method: :delete,
                           data: { confirm: "Confirm Account Deletion" } %>
           <% end %>

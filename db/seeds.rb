@@ -1,20 +1,15 @@
 # frozen_string_literal: true
 
-utype = %w[admin therapist volunteer client]
-utype.each do |t|
-  Usertype.create!(user_type: t)
-end
-
 User.create!(firstname:  'William',
              lastname: 'Bland',
-             usertype_id: 1,
              email: 'admin@email.com',
              password:              '12345678',
              password_confirmation: '12345678',
-             address: "94, FL street, Aberdeen",
-             admin: true,
              activated: true,
              activated_at: Time.zone.now)
+
+Admin.create!(position: 'System Administrator',
+              user_id: 1)
 
 50.times do |n|
   firstname = Faker::Name.first_name
@@ -32,8 +27,10 @@ User.create!(firstname:  'William',
 end
 
 50.times do |n|
-  title = "Room #{n + 1}"
+  title = "Object #{n + 1}"
   description = Faker::Lorem.sentence(5)
+  hourly_rate = Faker::Number.decimal(2)
   Resource.create!(title:  title,
-                   description: description)
+                   description: description,
+                   hourly_rate: hourly_rate)
 end

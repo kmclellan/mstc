@@ -7,5 +7,8 @@
   <%= f.label :description, "Description"  %>
   <%= f.text_field :description, class: 'form-control' %>
 
+  <%= f.label :hourly_rate, "Hourly rate"  %>
+  <%= f.number_field :hourly_rate, class: 'form-control', step: 0.01 %>
+
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>

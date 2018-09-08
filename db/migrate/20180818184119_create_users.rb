@@ -2,17 +2,26 @@
 
 class CreateUsers < ActiveRecord::Migration[5.2]
   def change
-    create_table :usertypes do |t|
-      t.text :user_type
-    end
-
     create_table :users do |t|
-      t.belongs_to :usertype, foreign_key: true
       t.string :firstname
       t.string :lastname
       t.string :email
 
       t.timestamps
     end
+
+    create_table :admins do |t|
+      t.references :user, index: { unique: true }, foreign_key: true
+      t.string :position
+
+      t.timestamps
+    end
+
+    create_table :clients do |t|
+      t.references :user, index: { unique: true }, foreign_key: true
+
+      t.timestamps
+    end
+
   end
 end

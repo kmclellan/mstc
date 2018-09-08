@@ -2,6 +2,7 @@
   <td><%= resource.id %> </td>
   <td><%= resource.title %> </td>
   <td><%= resource.description %></td>
+  <td>£ <%= resource.hourly_rate %></td>
   <td><%= link_to "View", resource_path(resource) %></td>
   <td><%= link_to "Edit", edit_resource_path(resource) %></td>
   <td><%= link_to "Delete", resource, method: :delete,
