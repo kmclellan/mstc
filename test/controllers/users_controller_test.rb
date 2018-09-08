@@ -34,17 +34,17 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
   test 'should not allow admin attribute to be edited via website' do
     log_in_as(@other_user)
-    assert_not @other_user.admin?
+    assert_not @other_user.administrator?
     patch user_path(@other_user), params: { user: { password: @other_user.password,
                                                     password_confirmation: @other_user.password_confirmation,
                                                     admin: true } }
-    assert_not @other_user.reload.admin?
+    assert_not @other_user.reload.administrator?
   end
 
   test 'should redirect edit when logged in as wrong user' do
     log_in_as(@other_user)
     get edit_user_path(@user)
-    assert flash.empty?
+    assert_not flash.empty?
     assert_redirected_to root_url
   end
 
@@ -53,7 +53,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     patch user_path(@user), params: { user: { firstname: @user.firstname,
                                               lastname: @user.lastname,
                                               email: @user.email } }
-    assert flash.empty?
+    assert_not flash.empty?
     assert_redirected_to root_url
   end
 
@@ -71,4 +71,5 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     end
     assert_redirected_to root_url
   end
+
 end

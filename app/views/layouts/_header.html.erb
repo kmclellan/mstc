@@ -27,7 +27,7 @@
               <li><%= link_to "Edit Information", edit_user_path(current_user) %></li>
             </ul>
           </li>
-          <% if current_user.usertype_id == 1 %>
+          <% if current_user.administrator? %>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">User management<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Users list", users_path %></li>
