@@ -4,7 +4,6 @@ alfred:
   lastname: Keane
   email: alfred.keane@email.com
   password_digest: <%= User.digest('password') %>
-  administrator: true
   activated: true
   activated_at: <%= Time.zone.now %>
 

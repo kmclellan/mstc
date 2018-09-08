@@ -5,12 +5,14 @@ require 'test_helper'
 class UsersIndexTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:alfred)
+    @admin = Admin.where(user_id: @user.id).first
     @other_user = users(:mary)
+    @non_admin = Admin.where(user_id: @other_user.id).first
   end
 
   test 'Users list including pagination' do
     log_in_as(@user)
-    assert @user.administrator?
+    assert @admin
     get users_path
     assert_response :success
     assert_template 'users/index'
@@ -30,7 +32,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
 
   test 'should redirect when not logged in as admin' do
     log_in_as(@other_user)
-    assert_not @other_user.administrator?
+    assert_not @non_admin
     get users_path
     assert_redirected_to root_url
   end

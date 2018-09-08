@@ -5,7 +5,6 @@ User.create!(firstname:  'William',
              email: 'admin@email.com',
              password:              '12345678',
              password_confirmation: '12345678',
-             administrator: true,
              activated: true,
              activated_at: Time.zone.now)
 
