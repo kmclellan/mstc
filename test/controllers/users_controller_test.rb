@@ -13,6 +13,12 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to login_url
   end
 
+  test 'should redirect index when not logged in as admin' do
+    log_in_as(@other_user)
+    get users_path
+    assert_redirected_to root_url
+  end
+
   test 'should get new' do
     get users_new_path
     assert_response :success

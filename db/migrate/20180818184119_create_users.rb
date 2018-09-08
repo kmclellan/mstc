@@ -17,5 +17,11 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
+    create_table :clients do |t|
+      t.references :user, index: { unique: true }, foreign_key: true
+
+      t.timestamps
+    end
+
   end
 end

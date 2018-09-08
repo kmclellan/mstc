@@ -3,7 +3,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: %i[index edit update destroy]
   before_action :correct_user,   only: %i[edit show update]
-  before_action :admin_user,     only: [:index, :destroy]
+  before_action :admin_user,     only: %i[index destroy]
 
   def index
     @users = User.paginate(page: params[:page])
@@ -67,15 +67,16 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find(params[:id])
-    unless current_user?(@user)
+    @admin = Admin.where(user_id: current_user.id).first
+    unless current_user?(@user) || @admin
       flash[:danger] = 'Error! Attempted action has been denied.'
       redirect_to(root_url)
     end
   end
 
   def admin_user
-    @admin = Admin.where(user_id: current_user.id)
-    if @admin.empty?
+    @admin = Admin.where(user_id: current_user.id).first
+    unless @admin
       flash[:danger] = 'Error! Attempted action has been denied.'
       redirect_to(root_url)
     end

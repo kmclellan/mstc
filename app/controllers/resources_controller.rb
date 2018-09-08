@@ -49,6 +49,6 @@ class ResourcesController < ApplicationController
   end
 
   def admin_user
-    redirect_to(root_url) unless logged_in? && current_user.administrator?
+    redirect_to(root_url) unless logged_in? && admin?
   end
 end

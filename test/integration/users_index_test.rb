@@ -8,7 +8,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     @other_user = users(:mary)
   end
 
-  test "index including pagination" do
+  test 'Users list including pagination' do
     log_in_as(@user)
     assert @user.administrator?
     get users_path
@@ -26,5 +26,12 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     assert_difference 'User.count', -1 do
       delete user_path(@other_user)
     end
+  end
+
+  test 'should redirect when not logged in as admin' do
+    log_in_as(@other_user)
+    assert_not @other_user.administrator?
+    get users_path
+    assert_redirected_to root_url
   end
 end
