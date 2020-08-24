@@ -20,7 +20,7 @@ gem 'rails', '5.2.2.1'
 gem 'sass-rails', '5.0.7'
 gem 'turbolinks', '5.2.0'
 gem 'uglifier', '4.2.0'
-gem 'will_paginate', '3.1.6'
+gem 'will_paginate', '3.3.0'
 gem 'cloudinary'
 
 group :development, :test do
