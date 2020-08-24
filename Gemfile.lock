@@ -451,7 +451,7 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    turbolinks (5.2.0)
+    turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (1.2.7)
@@ -507,7 +507,7 @@ DEPENDENCIES
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
   sqlite3 (= 1.4.2)
-  turbolinks (= 5.2.0)
+  turbolinks (= 5.2.1)
   tzinfo-data
   uglifier (= 4.2.0)
   web-console (= 3.7.0)
