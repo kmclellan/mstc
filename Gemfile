@@ -24,7 +24,7 @@ gem 'will_paginate', '3.3.0'
 gem 'cloudinary'
 
 group :development, :test do
-  gem 'byebug',  '10.0.2', platform: :mri
+  gem 'byebug',  '11.1.3', platform: :mri
   gem 'rubocop', '0.89.1', require: false
   gem 'sqlite3', '1.4.2'
 end
