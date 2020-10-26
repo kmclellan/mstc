@@ -25,7 +25,7 @@ gem 'cloudinary'
 
 group :development, :test do
   gem 'byebug',  '11.1.3', platform: :mri
-  gem 'rubocop', '0.90.0', require: false
+  gem 'rubocop', '1.0.0', require: false
   gem 'sqlite3', '1.4.2'
 end
 
