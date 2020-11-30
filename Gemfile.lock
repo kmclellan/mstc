@@ -92,7 +92,7 @@ GEM
     erubi (1.9.0)
     excon (0.76.0)
     execjs (2.7.0)
-    faker (2.13.0)
+    faker (2.15.1)
       i18n (>= 1.6, < 2)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
@@ -498,7 +498,7 @@ DEPENDENCIES
   carrierwave (= 2.1.0)
   cloudinary
   coffee-rails (= 5.0.0)
-  faker (= 2.13.0)
+  faker (= 2.15.1)
   fog (= 2.2.0)
   guard (= 2.16.2)
   guard-minitest (= 2.4.6)
