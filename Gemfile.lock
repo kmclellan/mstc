@@ -82,7 +82,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     crass (1.0.6)
     declarative (0.0.10)
     declarative-option (0.1.0)
@@ -92,7 +92,7 @@ GEM
     erubi (1.9.0)
     excon (0.76.0)
     execjs (2.7.0)
-    faker (2.13.0)
+    faker (2.18.0)
       i18n (>= 1.6, < 2)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
@@ -291,7 +291,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
-    i18n (1.8.5)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     image_processing (1.11.0)
       mini_magick (>= 4.9.5, < 5)
@@ -321,7 +321,9 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.0512)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.10.1)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -498,7 +500,7 @@ DEPENDENCIES
   carrierwave (= 2.1.0)
   cloudinary
   coffee-rails (= 5.0.0)
-  faker (= 2.13.0)
+  faker (= 2.18.0)
   fog (= 2.2.0)
   guard (= 2.16.2)
   guard-minitest (= 2.4.6)
